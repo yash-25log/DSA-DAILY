@@ -44,7 +44,8 @@ public:
             start = start -> next;
             mid = mid->next;
         }
-        print(head);
+        
+        slow ->next = reverseList(slow->next);
         return true;
     }
 };
