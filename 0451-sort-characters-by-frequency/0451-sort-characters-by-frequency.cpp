@@ -3,7 +3,7 @@ public:
     string frequencySort(string s) {
         int si = s.size();
         unordered_map<char,int>freq;
-        vector<string>bucket(s.size()+1,"");
+        vector<string>bucket(si+1,"");
         string res;
         for(char ch : s) freq[ch]++;
         
